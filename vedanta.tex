@@ -1,0 +1,442 @@
+\documentclass{article}
+\usepackage[paperwidth=100in,paperheight=100in,margin=1in]{geometry}
+\usepackage{forest}
+
+\begin{document}
+
+\begin{forest}
+  for tree={
+    grow=east,
+    draw,
+    rounded corners,
+    node options={align=center},
+    s sep+=1mm,
+    edge={->},
+    parent anchor=east,
+    child anchor=west,
+    l=6cm,
+    anchor=center
+  },
+  where level=1{tikz={\draw[->, thick] (.north east) -- ++(0,1) -| (.north);}}{},
+  where level=1{tikz={\draw[->, thick] (.south east) -- ++(0,-1) -| (.south);}}{}
+  [Vedanta Philosophy, name=vedanta
+    [Advaita Vedanta, name=advaita
+      [Brahman\\(Ultimate Reality)
+        [Nirguna Brahman\\(Brahman without attributes)
+          [Sat\\(Existence)
+            [Satyam\\(Truth)
+              [Rta\\(Cosmic Order)
+                [Dharma\\(Righteousness)]
+                [Karma\\(Action in Accord with Dharma)]
+              ]
+            ]
+            [Ekam\\(Oneness)
+              [Advitiyam\\(Non-duality)]
+              [Aikya\\(Unity of Atman and Brahman)]
+            ]
+          ]
+          [Chit\\(Consciousness)
+            [Jnana\\(Knowledge)
+              [Vijnana\\(Wisdom)
+                [Prajna\\(Higher Intuitive Knowledge)]
+              ]
+              [Aparoksha\\(Direct Realization)]
+            ]
+            [Chidakasha\\(Field of Consciousness)
+              [Hridayakasha\\(Space of the Heart)
+                [Anahata\\(Unstruck Sound, Inner Voice)]
+              ]
+              [Daharakasha\\(Space within the Heart)]
+            ]
+          ]
+          [Ananda\\(Bliss)
+            [Prema\\(Divine Love)
+              [Bhava\\(Devotional Emotion)]
+              [Madhurya\\(Sweetness of Divine Love)]
+            ]
+            [Sukha\\(Happiness)
+              [Dukha\\(Sorrow as a Contrast)]
+              [Nirvana\\(Bliss of Liberation)]
+            ]
+          ]
+        ]
+        [Saguna Brahman\\(Brahman with attributes)
+          [Ishvara\\(Personal God)
+            [Avatar\\(Incarnations of God)
+              [Rama\\(Incarnation of Vishnu)
+                [Sita\\(Consort of Rama)]
+                [Hanuman\\(Devotee of Rama)]
+                [Lakshmana\\(Brother of Rama)]
+                [Bharata\\(Brother of Rama)]
+                [Shatrughna\\(Brother of Rama)]
+              ]
+              [Krishna\\(Incarnation of Vishnu)
+                [Radha\\(Consort of Krishna)]
+                [Arjuna\\(Devotee and Friend of Krishna)]
+                [Balarama\\(Brother of Krishna)]
+                [Subhadra\\(Sister of Krishna)]
+                [Gopis\\(Devotees of Krishna)]
+              ]
+              [Buddha\\(Incarnation of Vishnu)]
+              [Kalki\\(Future Incarnation of Vishnu)]
+            ]
+          ]
+          [Trimurti\\(Trinity of Gods)
+            [Brahma\\(Creator)
+              [Saraswati\\(Goddess of Knowledge)
+                [Vani\\(Speech as Saraswati's Form)]
+                [Vak\\(Divine Speech)]
+              ]
+            ]
+            [Vishnu\\(Preserver)
+              [Lakshmi\\(Goddess of Wealth)
+                [Sri\\(Auspiciousness)]
+                [Bhudevi\\(Earth Goddess)]
+                [Neeladevi\\(Goddess of Water)]
+              ]
+              [Garuda\\(Divine Eagle, Vehicle of Vishnu)]
+              [Shesha\\(Cosmic Serpent)]
+            ]
+            [Shiva\\(Destroyer)
+              [Parvati\\(Goddess of Power)
+                [Durga\\(Warrior Form)]
+                [Kali\\(Goddess of Time and Change)]
+                [Sati\\(Previous Incarnation of Parvati)]
+              ]
+              [Ganesha\\(Remover of Obstacles)
+                [Siddhi\\(Success, Consort of Ganesha)]
+                [Riddhi\\(Prosperity, Consort of Ganesha)]
+              ]
+              [Kartikeya\\(God of War)
+                [Devasena\\(Consort of Kartikeya)]
+              ]
+              [Nandi\\(Bull, Vehicle of Shiva)]
+              [Bhairava\\(Fierce Form of Shiva)]
+            ]
+          ]
+        ]
+      ]
+      [Atman\\(Self)
+        [Jivatman\\(Individual Soul)
+          [Avidya\\(Ignorance of true self)
+            [Asmita\\(Egoism)]
+            [Ahamkara\\(Ego)]
+            [Moha\\(Delusion)]
+            [Tamas\\(Darkness, Inertia)]
+          ]
+          [Antahkarana\\(Inner Instrument)
+            [Manas\\(Mind)
+              [Vritti\\(Modifications of the Mind)
+                [Raga\\(Attachment)]
+                [Dvesha\\(Aversion)]
+                [Samskara\\(Mental Impressions)]
+              ]
+            ]
+            [Buddhi\\(Intellect)
+              [Viveka\\(Discrimination)]
+              [Sankalpa\\(Resolution)]
+              [Nishcaya\\(Certainty)]
+            ]
+            [Chitta\\(Memory)
+              [Smriti\\(Recollection)]
+              [Vasana\\(Latent Impressions)]
+            ]
+            [Ahamkara\\(Ego)
+              [Abhimana\\(Pride)]
+              [Mamata\\(Possessiveness)]
+            ]
+          ]
+        ]
+        [Paramatman\\(Supreme Soul)
+          [Sarvagata\\(All-Pervading)
+            [Ananta\\(Infinite)]
+            [Avyakta\\(Unmanifest)]
+          ]
+          [Sarvajna\\(All-Knowing)
+            [Sarvadarshi\\(All-Seeing)]
+            [Vishvachaitanya\\(Universal Consciousness)]
+          ]
+          [Satchidananda\\(Being-Consciousness-Bliss)
+            [Sat\\(Being)]
+              [Asti\\(Existence)]
+            [Chit\\(Consciousness)]
+              [Bodha\\(Awareness)]
+            [Ananda\\(Bliss)]
+              [Sukha\\(Happiness)]
+              [Nirvana\\(Liberation)]
+          ]
+        ]
+      ]
+      [Maya\\(Illusion)
+        [Avidya\\(Ignorance)
+          [Asmita\\(Egoism)]
+          [Raga\\(Attachment)]
+          [Dvesha\\(Aversion)]
+          [Abhinivesha\\(Clinging to Life)]
+        ]
+        [Karma\\(Action)
+          [Prarabdha\\(Actions that bear fruit in this life)]
+            [Kriyamana\\(Ongoing Actions)]
+          [Sanchita\\(Accumulated actions from past lives)]
+            [Aham\\(I-ness)]
+          [Agami\\(Future actions resulting from current life)]
+            [Punya\\(Merit)]
+            [Papa\\(Demerit)]
+        ]
+        [Samsara\\(Cycle of Rebirth)
+          [Punarjanma\\(Rebirth)]
+            [Janma\\(Birth)]
+            [Mrityu\\(Death)]
+          [Moksha\\(Liberation from the cycle)]
+        ]
+      ]
+      [Moksha\\(Liberation)
+        [Jnana\\(Knowledge)
+          [Shravana\\(Hearing of Truth)]
+          [Manana\\(Reflection on Truth)]
+          [Nididhyasana\\(Meditation on Truth)]
+            [Samadhi\\(Absorption in Truth)]
+        ]
+        [Vairagya\\(Detachment)
+          [Tyaga\\(Renunciation of Worldly Desires)]
+            [Karma Tyaga\\(Renunciation of Action)]
+          [Sannyasa\\(Renunciation of Worldly Life)]
+            [Vividisha Sannyasa\\(Renunciation with Desire for Knowledge)]
+            [Vidvat Sannyasa\\(Renunciation after Realization)]
+        ]
+        [Sadhana\\(Spiritual Practice)
+          [Bhakti Yoga\\(Path of Devotion)]
+            [Navadha Bhakti\\(Nine Forms of Devotion)]
+              [Shravana\\(Listening)]
+              [Kirtana\\(Chanting)]
+              [Smarana\\(Remembering)]
+              [Padasevana\\(Service at God's Feet)]
+              [Archana\\(Worship)]
+              [Vandana\\(Salutation)]
+              [Dasya\\(Servitude)]
+              [Sakhya\\(Friendship)]
+              [Atmanivedana\\(Self-Surrender)]
+          [Karma Yoga\\(Path of Action)]
+            [Nishkama Karma\\(Selfless Action)]
+              [Seva\\(Service)]
+            [Sakama Karma\\(Selfish Action)]
+          [Jnana Yoga\\(Path of Knowledge)]
+            [Vichara\\(Self-Inquiry)]
+              [Atma Vichara\\(Inquiry into the Self)]
+                [Koham\\(Who am I?)]
+                [Drig-Drishya Viveka\\(Discrimination between the Seer and the Seen)]
+            [Shravana\\(Listening to the Teachings)]
+            [Manana\\(Reflecting on the Teachings)]
+            [Nididhyasana\\(Meditating on the Teachings)]
+              [Sakshi Bhava\\(Witness Consciousness)]
+              [Samadhi\\(Absorption in the Self)]
+          [Raja Yoga\\(Path of Meditation)]
+            [Ashtanga Yoga\\(Eightfold Path)]
+              [Yama\\(Moral Restraints)]
+                [Ahimsa\\(Non-Violence)]
+                [Satya\\(Truthfulness)]
+                [Asteya\\(Non-Stealing)]
+                [Brahmacharya\\(Celibacy)]
+                [Aparigraha\\(Non-Possessiveness)]
+              [Niyama\\(Observances)]
+                [Saucha\\(Purity)]
+                [Santosha\\(Contentment)]
+                [Tapas\\(Austerity)]
+                [Svadhyaya\\(Self-Study)]
+                [Ishvara Pranidhana\\(Surrender to God)]
+              [Asana\\(Postures)]
+                [Padmasana\\(Lotus Pose)]
+                [Sukhasana\\(Easy Pose)]
+                [Savasana\\(Corpse Pose)]
+              [Pranayama\\(Breath Control)]
+                [Nadi Shodhana\\(Alternate Nostril Breathing)]
+                [Kapalabhati\\(Skull-Shining Breath)]
+                [Bhastrika\\(Bellows Breath)]
+              [Pratyahara\\(Withdrawal of Senses)]
+                [Indriya Nigraha\\(Control of Senses)]
+              [Dharana\\(Concentration)]
+                [Ekagrata\\(Single-Pointed Focus)]
+              [Dhyana\\(Meditation)]
+                [Dhyanam\\(Uninterrupted Flow of Thought)]
+              [Samadhi\\(Absorption)]
+                [Savikalpa Samadhi\\(Samadhi with Support)]
+                [Nirvikalpa Samadhi\\(Samadhi without Support)]
+          [Hatha Yoga\\(Physical Discipline)]
+            [Shatkarma\\(Six Cleansing Techniques)]
+              [Neti\\(Nasal Cleansing)]
+              [Dhauti\\(Cleansing of Digestive Tract)]
+              [Basti\\(Colon Cleansing)]
+              [Nauli\\(Abdominal Cleansing)]
+              [Trataka\\(Gazing)]
+              [Kapalabhati\\(Skull-Shining Breath)]
+            [Mudra\\(Gestures)]
+              [Jnana Mudra\\(Gesture of Knowledge)]
+              [Chin Mudra\\(Gesture of Consciousness)]
+            [Bandha\\(Locks)]
+              [Mula Bandha\\(Root Lock)]
+              [Uddiyana Bandha\\(Abdominal Lock)]
+              [Jalandhara Bandha\\(Throat Lock)]
+            [Kriya\\(Actions)]
+              [Kundalini Kriya\\(Awakening the Serpent Power)]
+              [Pranayama Kriya\\(Breathing Techniques)]
+            [Nadi Shuddhi\\(Purification of Energy Channels)]
+        ]
+      ]
+    ]
+    [Vishishtadvaita Vedanta, name=vishishtadvaita
+      [Brahman\\(Qualified Non-dualism)
+        [Saguna Brahman\\(Brahman with qualities)
+          [Narayana\\(Supreme God)]
+          [Lakshmi\\(Divine Consort)]
+          [Vishvaksena\\(Commander of Narayana's Army)]
+          [Garuda\\(Divine Eagle)]
+          [Ananta\\(Eternal Serpent)]
+        ]
+        [Sri\\(Goddess of Fortune)
+          [Bhudevi\\(Earth Goddess)]
+          [Neeladevi\\(Goddess of Water)]
+        ]
+        [Nitya Suri\\(Eternal Servants of Narayana)]
+          [Ananta\\(Eternal Serpent)]
+          [Garuda\\(Divine Eagle)]
+        ]
+        [Vibhava\\(Incarnations of Narayana)]
+          [Rama\\(Incarnation as the Ideal King)]
+          [Krishna\\(Incarnation as the Divine Playful Being)]
+          [Narasimha\\(Incarnation as the Man-Lion)]
+          [Vamana\\(Incarnation as the Dwarf)]
+          [Parashurama\\(Incarnation as the Warrior)]
+          [Matsya\\(Incarnation as the Fish)]
+          [Kurma\\(Incarnation as the Tortoise)]
+          [Varaha\\(Incarnation as the Boar)]
+          [Kalki\\(Future Incarnation)]
+      ]
+      [Atman\\(Self is a part of Brahman)
+        [Jivatma\\(Individual Soul with qualities)
+          [Chit\\(Consciousness as a quality)]
+          [Achit\\(Non-conscious matter as a quality)]
+          [Antaryamin\\(Inner Controller)]
+          [Bhagavata\\(Devotee of the Lord)]
+        ]
+        [Paramatma\\(Supreme Soul with qualities)
+          [Sarvashaktiman\\(All-Powerful)]
+          [Sarvajna\\(All-Knowing)]
+          [Sarvavyapi\\(All-Pervading)]
+          [Nirupadhika\\(Unconditioned)]
+        ]
+      ]
+      [Bhakti\\(Devotion)
+        [Saranagati\\(Surrender)
+          [Ananya Bhakti\\(Exclusive Devotion)]
+          [Sankalpam\\(Vow to Serve God)]
+          [Pratikulasya Varjanam\\(Rejection of What is Unfavorable)]
+          [Rakshishyati Iti Vishvasah\\(Confidence in God's Protection)]
+          [Goptrtve Varana\\(Acceptance of God as Protector)]
+          [Atmanikshepa\\(Complete Self-Surrender)]
+          [Karpanya\\(Feeling of Helplessness)]
+        ]
+        [Prapatti\\(Complete Self-surrender)
+          [Anukulasya Sankalpa\\(Acceptance of What is Favorable)]
+          [Pratikulasya Varjanam\\(Rejection of What is Unfavorable)]
+          [Rakshishyati Iti Vishvasah\\(Confidence in God's Protection)]
+          [Goptrtve Varana\\(Acceptance of God as Protector)]
+          [Atmanikshepa\\(Complete Self-Surrender)]
+          [Karpanya\\(Feeling of Helplessness)]
+          [Pushti\\(Grace)]
+          [Madhurya Bhakti\\(Devotion through Sweet Love)]
+        ]
+      ]
+      [Moksha\\(Liberation)
+        [Vaikuntha\\(Divine Abode)
+          [Nitya Vibhuti\\(Eternal Realm)]
+          [Leela Vibhuti\\(Playful Realm)]
+        ]
+        [Grace\\(Divine Compassion)
+          [Kripa\\(Mercy)]
+          [Karuna\\(Compassion)]
+        ]
+        [Sadhana\\(Spiritual Practice)
+          [Bhakti\\(Devotion)]
+            [Navadha Bhakti\\(Nine Forms of Devotion)]
+              [Shravana\\(Listening)]
+              [Kirtana\\(Chanting)]
+              [Smarana\\(Remembering)]
+              [Padasevana\\(Service at God's Feet)]
+              [Archana\\(Worship)]
+              [Vandana\\(Salutation)]
+              [Dasya\\(Servitude)]
+              [Sakhya\\(Friendship)]
+              [Atmanivedana\\(Self-Surrender)]
+          [Karma\\(Action)]
+            [Nishkama Karma\\(Selfless Action)]
+            [Seva\\(Service)]
+          [Jnana\\(Knowledge)]
+            [Vichara\\(Inquiry)]
+          [Dhyana\\(Meditation)]
+            [Ekagrata\\(Single-Pointed Focus)]
+            [Samadhi\\(Absorption)]
+      ]
+    ]
+    [Dvaita Vedanta, name=dvaita
+      [Brahman\\(Supreme Being)
+        [Vishnu\\(Supreme God)]
+        [Lakshmi\\(Goddess of Fortune)]
+        [Garuda\\(Divine Eagle, Vehicle of Vishnu)]
+        [Hanuman\\(Devotee of Rama)]
+      ]
+      [Jiva\\(Individual soul)
+        [Mukti-yogyas\\(Souls eligible for liberation)
+          [Sattvic\\(Pure Souls)]
+          [Bhakta\\(Devotee)]
+          [Prapanna\\(One who has Surrendered)]
+        ]
+        [Nitya-samsarins\\(Eternally bound souls)
+          [Rajas\\(Passionate Souls)]
+          [Tamas\\(Ignorant Souls)]
+          [Ajnani\\(Ignorant One)]
+          [Karma-Bandha\\(Bound by Actions)]
+        ]
+        [Tamo-yogyas\\(Souls destined for eternal damnation)
+          [Asuras\\(Demons)]
+          [Rakshasas\\(Monstrous Beings)]
+          [Duratma\\(Evil Souls)]
+        ]
+      ]
+      [Dualism\\(Separation of God and soul)
+        [Bheda\\(Difference)
+          [Visheshabheda\\(Specific Difference)]
+          [Sajatiya Bheda\\(Difference within a Category)]
+          [Vijatiya Bheda\\(Difference between Categories)]
+          [Svagata Bheda\\(Internal Difference)]
+        ]
+        [Abheda\\(Non-identity)
+          [Advaita\\(Non-duality as Conceptual Unity)]
+          [Dwaita\\(Duality as Actual Reality)]
+        ]
+      ]
+      [Moksha\\(Liberation)
+        [Dasa-bhakti\\(Servitude to God)
+          [Dasya\\(Service as a Devotee)]
+          [Seva\\(Selfless Service)]
+        ]
+        [Sakha-bhakti\\(Friendship with God)
+          [Sakha\\(Companionship with God)]
+          [Madhurya\\(Devotion through Sweet Love)]
+        ]
+        [Sarshti\\(Sharing in God's Opulences)]
+        [Salokya\\(Residing in God's Abode)]
+        [Samipya\\(Being Close to God)]
+        [Sarupya\\(Having the Same Form as God)]
+        [Sadhana\\(Spiritual Practice)]
+          [Namasmarana\\(Chanting the Name of God)]
+          [Puja\\(Worship)]
+          [Arati\\(Ceremonial Offering)]
+          [Seva\\(Selfless Service)]
+      ]
+    ]
+  ]
+]
+
+\end{forest}
+
+\end{document}
